@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xmi:XMI xmlns:uml="http://schema.omg.org/spec/UML/2.1.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmi:version="2.1">
+  <xmi:Documentation contact="www.sap.com" exporter="CL_UML_CLASS_DECOR_XMI" exporterVersion="1.0"/>
+  <uml:Package name="Root" xmi:id="U.SAP.CL_UML_CLASS_DECOR_XMI">
+    <packagedElement name="ZEWM_IPOINT_DIALOG" visibility="public" xmi:id="U.ZEWM_IPOINT_DIALOG" xmi:type="uml:Package">
+      <packagedElement name="ZIF_EWM_IPOINT_DLG_I1_DATA\TYPE=TS_IPOINT_I1_SCREEN_DATA" visibility="public" xmi:id="U.S.ZIF_EWM_IPOINT_DLG_I1_DATA\TYPE=TS_IPOINT_I1_SCREEN_DATA" xmi:type="uml:DataType"/>
+      <packagedElement name="ZCL_EWM_IPOINT_DLG_I1_DC" visibility="public" xmi:id="U.O.ZCL_EWM_IPOINT_DLG_I1_DC" xmi:isAbstract="false" xmi:type="uml:Class">
+        <generalization xmi:type="uml:Generalization" xmi:id="U.INH.ZCL_EWM_IPOINT_DLG_I1_DC.ZCL_EWM_MASTER_DIALOG_IC" general="U.O.ZCL_EWM_MASTER_DIALOG_IC" specific="U.O.ZCL_EWM_IPOINT_DLG_I1_DC"/>
+        <interfaceRealization xmi:id="U.IMP.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_IPOINT_DLG_I1_DATA" visibility="public" contract="U.O.ZIF_EWM_IPOINT_DLG_I1_DATA" xmi:type="uml:InterfaceRealization">
+          <client xmi:idref="U.O.ZCL_EWM_IPOINT_DLG_I1_DC"/>
+          <supplier xmi:idref="U.O.ZIF_EWM_IPOINT_DLG_I1_DATA"/>
+        </interfaceRealization>
+        <ownedAttribute isStatic="true" name="MO_DATA_MODEL" type="U.O.ZCL_EWM_IPOINT_DLG_MO" visibility="protected" xmi:id="U.O.ZCL_EWM_IPOINT_DLG_I1_DC.MO_DATA_MODEL" xmi:type="uml:Property"/>
+        <ownedOperation name="ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_BACK" visibility="public" xmi:id="U.O.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_BACK" xmi:type="uml:Operation">
+          <ownedParameter direction="in" name="II_SENDER" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_BACK.II_SENDER" xmi:type="uml:Parameter">
+            <lowerValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_BACK.II_SENDER.L" value="1"/>
+            <upperValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_BACK.II_SENDER.H" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation name="ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_ENTER" visibility="public" xmi:id="U.O.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_ENTER" xmi:type="uml:Operation">
+          <ownedParameter direction="in" name="II_SENDER" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_ENTER.II_SENDER" xmi:type="uml:Parameter">
+            <lowerValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_ENTER.II_SENDER.L" value="1"/>
+            <upperValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_ENTER.II_SENDER.H" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation name="ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_F3" visibility="public" xmi:id="U.O.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_F3" xmi:type="uml:Operation">
+          <ownedParameter direction="in" name="II_SENDER" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_F3.II_SENDER" xmi:type="uml:Parameter">
+            <lowerValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_F3.II_SENDER.L" value="1"/>
+            <upperValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_F3.II_SENDER.H" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation name="ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_F6" visibility="public" xmi:id="U.O.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_F6" xmi:type="uml:Operation">
+          <ownedParameter direction="in" name="II_SENDER" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_F6.II_SENDER" xmi:type="uml:Parameter">
+            <lowerValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_F6.II_SENDER.L" value="1"/>
+            <upperValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_F6.II_SENDER.H" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation name="ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_F7" visibility="public" xmi:id="U.O.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_F7" xmi:type="uml:Operation">
+          <ownedParameter direction="in" name="II_SENDER" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_F7.II_SENDER" xmi:type="uml:Parameter">
+            <lowerValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_F7.II_SENDER.L" value="1"/>
+            <upperValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MAIN_DIALOG_NAVIGATION~ON_F7.II_SENDER.H" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation name="ZIF_EWM_MASTER_VIEW_CX_LOG~LOG_CX" visibility="public" xmi:id="U.O.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MASTER_VIEW_CX_LOG~LOG_CX" xmi:type="uml:Operation">
+          <ownedParameter direction="in" name="IX_ROOT" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MASTER_VIEW_CX_LOG~LOG_CX.IX_ROOT" xmi:type="uml:Parameter">
+            <lowerValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MASTER_VIEW_CX_LOG~LOG_CX.IX_ROOT.L" value="1"/>
+            <upperValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.ZIF_EWM_MASTER_VIEW_CX_LOG~LOG_CX.IX_ROOT.H" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation name="CONSTRUCTOR" visibility="public" xmi:id="U.O.ZCL_EWM_IPOINT_DLG_I1_DC.CONSTRUCTOR" xmi:type="uml:Operation">
+          <ownedParameter direction="in" name="IV_WORKSTATION" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.CONSTRUCTOR.IV_WORKSTATION" xmi:type="uml:Parameter">
+            <lowerValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.CONSTRUCTOR.IV_WORKSTATION.L" value="1"/>
+            <upperValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.CONSTRUCTOR.IV_WORKSTATION.H" value="1"/>
+          </ownedParameter>
+          <ownedParameter direction="in" name="IV_REPID" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.CONSTRUCTOR.IV_REPID" xmi:type="uml:Parameter">
+            <lowerValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.CONSTRUCTOR.IV_REPID.L" value="1"/>
+            <upperValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZCL_EWM_IPOINT_DLG_I1_DC.CONSTRUCTOR.IV_REPID.H" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation name="CREATE_VIEWS" visibility="protected" xmi:id="U.O.ZCL_EWM_IPOINT_DLG_I1_DC.CREATE_VIEWS" xmi:type="uml:Operation"/>
+        <ownedOperation name="REFRESH_VIEW" visibility="private" xmi:id="U.O.ZCL_EWM_IPOINT_DLG_I1_DC.REFRESH_VIEW" xmi:type="uml:Operation"/>
+        <ownedOperation name="START" visibility="public" xmi:id="U.O.ZCL_EWM_IPOINT_DLG_I1_DC.START" xmi:type="uml:Operation"/>
+        <ownedOperation name="TRY_TO_LOAD_DATA_IN_PROGRESS" visibility="protected" xmi:id="U.O.ZCL_EWM_IPOINT_DLG_I1_DC.TRY_TO_LOAD_DATA_IN_PROGRESS" xmi:type="uml:Operation"/>
+      </packagedElement>
+      <packagedElement name="ZIF_EWM_IPOINT_DLG_I1_DATA" visibility="public" xmi:id="U.O.ZIF_EWM_IPOINT_DLG_I1_DATA" xmi:isAbstract="false" xmi:type="uml:Interface">
+        <ownedAttribute isStatic="true" name="MS_I1_DATA" type="U.S.ZIF_EWM_IPOINT_DLG_I1_DATA\TYPE=TS_IPOINT_I1_SCREEN_DATA" visibility="public" xmi:id="U.O.ZIF_EWM_IPOINT_DLG_I1_DATA.MS_I1_DATA" xmi:type="uml:Property"/>
+      </packagedElement>
+      <packagedElement name="ZCL_EWM_IPOINT_DLG_MO" visibility="public" xmi:id="U.O.ZCL_EWM_IPOINT_DLG_MO" xmi:isAbstract="false" xmi:type="uml:Class"/>
+      <packagedElement xmi:type="uml:Association" xmi:id="U.ASS.ZCL_EWM_IPOINT_DLG_I1_DC.MO_DATA_MODEL.ZCL_EWM_IPOINT_DLG_MO" visibility="public">
+        <memberEnd xmi:idref="U.O.ZCL_EWM_IPOINT_DLG_I1_DC.MO_DATA_MODEL"/>
+        <ownedEnd xmi:type="uml:Property" xmi:id="U.ASP.ZCL_EWM_IPOINT_DLG_I1_DC.MO_DATA_MODEL.ZCL_EWM_IPOINT_DLG_MO" type="U.O.ZCL_EWM_IPOINT_DLG_I1_DC">
+          <association xmi:idref="U.ASS.ZCL_EWM_IPOINT_DLG_I1_DC.MO_DATA_MODEL.ZCL_EWM_IPOINT_DLG_MO"/>
+        </ownedEnd>
+        <memberEnd xmi:idref="U.ASP.ZCL_EWM_IPOINT_DLG_I1_DC.MO_DATA_MODEL.ZCL_EWM_IPOINT_DLG_MO"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement name="ZEWM_BASE_DIALOG" visibility="public" xmi:id="U.ZEWM_BASE_DIALOG" xmi:type="uml:Package">
+      <packagedElement name="ZCL_EWM_MASTER_DIALOG_IC" visibility="public" xmi:id="U.O.ZCL_EWM_MASTER_DIALOG_IC" xmi:isAbstract="true" xmi:type="uml:Class">
+        <generalization xmi:type="uml:Generalization" xmi:id="U.INH.ZCL_EWM_MASTER_DIALOG_IC.ZCL_EWM_BASE_DIALOG_IC" general="U.O.ZCL_EWM_BASE_DIALOG_IC" specific="U.O.ZCL_EWM_MASTER_DIALOG_IC"/>
+        <interfaceRealization xmi:id="U.IMP.ZCL_EWM_MASTER_DIALOG_IC.ZIF_EWM_MAIN_DIALOG_NAVIGATION" visibility="public" contract="U.O.ZIF_EWM_MAIN_DIALOG_NAVIGATION" xmi:type="uml:InterfaceRealization">
+          <client xmi:idref="U.O.ZCL_EWM_MASTER_DIALOG_IC"/>
+          <supplier xmi:idref="U.O.ZIF_EWM_MAIN_DIALOG_NAVIGATION"/>
+        </interfaceRealization>
+        <interfaceRealization xmi:id="U.IMP.ZCL_EWM_MASTER_DIALOG_IC.ZIF_EWM_MASTER_VIEW_CX_LOG" visibility="public" contract="U.O.ZIF_EWM_MASTER_VIEW_CX_LOG" xmi:type="uml:InterfaceRealization">
+          <client xmi:idref="U.O.ZCL_EWM_MASTER_DIALOG_IC"/>
+          <supplier xmi:idref="U.O.ZIF_EWM_MASTER_VIEW_CX_LOG"/>
+        </interfaceRealization>
+        <ownedAttribute isStatic="true" name="MI_VIEW_CX_LOG_SETTER" type="U.O.ZIF_EWM_MASTER_CX_LOG_SETTER" visibility="protected" xmi:id="U.O.ZCL_EWM_MASTER_DIALOG_IC.MI_VIEW_CX_LOG_SETTER" xmi:type="uml:Property"/>
+        <ownedAttribute isStatic="true" name="MO_LOG" type="U.O./SALT/CL_EWM_LOG_BAL" visibility="protected" xmi:id="U.O.ZCL_EWM_MASTER_DIALOG_IC.MO_LOG" xmi:type="uml:Property"/>
+      </packagedElement>
+      <packagedElement name="ZIF_EWM_MAIN_DIALOG_NAVIGATION" visibility="public" xmi:id="U.O.ZIF_EWM_MAIN_DIALOG_NAVIGATION" xmi:isAbstract="false" xmi:type="uml:Interface">
+        <ownedOperation name="ON_BACK" visibility="public" xmi:id="U.O.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_BACK" xmi:type="uml:Operation">
+          <ownedParameter direction="in" name="II_SENDER" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_BACK.II_SENDER" xmi:type="uml:Parameter">
+            <lowerValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_BACK.II_SENDER.L" value="1"/>
+            <upperValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_BACK.II_SENDER.H" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation name="ON_CANCEL" visibility="public" xmi:id="U.O.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_CANCEL" xmi:type="uml:Operation">
+          <ownedParameter direction="in" name="II_SENDER" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_CANCEL.II_SENDER" xmi:type="uml:Parameter">
+            <lowerValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_CANCEL.II_SENDER.L" value="1"/>
+            <upperValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_CANCEL.II_SENDER.H" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation name="ON_ENTER" visibility="public" xmi:id="U.O.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_ENTER" xmi:type="uml:Operation">
+          <ownedParameter direction="in" name="II_SENDER" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_ENTER.II_SENDER" xmi:type="uml:Parameter">
+            <lowerValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_ENTER.II_SENDER.L" value="1"/>
+            <upperValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_ENTER.II_SENDER.H" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation name="ON_EXIT" visibility="public" xmi:id="U.O.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_EXIT" xmi:type="uml:Operation">
+          <ownedParameter direction="in" name="II_SENDER" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_EXIT.II_SENDER" xmi:type="uml:Parameter">
+            <lowerValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_EXIT.II_SENDER.L" value="1"/>
+            <upperValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_EXIT.II_SENDER.H" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation name="ON_F3" visibility="public" xmi:id="U.O.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F3" xmi:type="uml:Operation">
+          <ownedParameter direction="in" name="II_SENDER" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F3.II_SENDER" xmi:type="uml:Parameter">
+            <lowerValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F3.II_SENDER.L" value="1"/>
+            <upperValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F3.II_SENDER.H" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation name="ON_F5" visibility="public" xmi:id="U.O.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F5" xmi:type="uml:Operation">
+          <ownedParameter direction="in" name="II_SENDER" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F5.II_SENDER" xmi:type="uml:Parameter">
+            <lowerValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F5.II_SENDER.L" value="1"/>
+            <upperValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F5.II_SENDER.H" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation name="ON_F6" visibility="public" xmi:id="U.O.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F6" xmi:type="uml:Operation">
+          <ownedParameter direction="in" name="II_SENDER" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F6.II_SENDER" xmi:type="uml:Parameter">
+            <lowerValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F6.II_SENDER.L" value="1"/>
+            <upperValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F6.II_SENDER.H" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation name="ON_F7" visibility="public" xmi:id="U.O.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F7" xmi:type="uml:Operation">
+          <ownedParameter direction="in" name="II_SENDER" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F7.II_SENDER" xmi:type="uml:Parameter">
+            <lowerValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F7.II_SENDER.L" value="1"/>
+            <upperValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F7.II_SENDER.H" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation name="ON_F8" visibility="public" xmi:id="U.O.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F8" xmi:type="uml:Operation">
+          <ownedParameter direction="in" name="II_SENDER" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F8.II_SENDER" xmi:type="uml:Parameter">
+            <lowerValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F8.II_SENDER.L" value="1"/>
+            <upperValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F8.II_SENDER.H" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation name="ON_F9" visibility="public" xmi:id="U.O.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F9" xmi:type="uml:Operation">
+          <ownedParameter direction="in" name="II_SENDER" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F9.II_SENDER" xmi:type="uml:Parameter">
+            <lowerValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F9.II_SENDER.L" value="1"/>
+            <upperValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_F9.II_SENDER.H" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation name="ON_NEXT" visibility="public" xmi:id="U.O.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_NEXT" xmi:type="uml:Operation">
+          <ownedParameter direction="in" name="II_SENDER" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_NEXT.II_SENDER" xmi:type="uml:Parameter">
+            <lowerValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_NEXT.II_SENDER.L" value="1"/>
+            <upperValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_NEXT.II_SENDER.H" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation name="ON_PREV" visibility="public" xmi:id="U.O.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_PREV" xmi:type="uml:Operation">
+          <ownedParameter direction="in" name="II_SENDER" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_PREV.II_SENDER" xmi:type="uml:Parameter">
+            <lowerValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_PREV.II_SENDER.L" value="1"/>
+            <upperValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MAIN_DIALOG_NAVIGATION.ON_PREV.II_SENDER.H" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement name="ZIF_EWM_MASTER_VIEW_CX_LOG" visibility="public" xmi:id="U.O.ZIF_EWM_MASTER_VIEW_CX_LOG" xmi:isAbstract="false" xmi:type="uml:Interface">
+        <ownedOperation name="LOG_CX" visibility="public" xmi:id="U.O.ZIF_EWM_MASTER_VIEW_CX_LOG.LOG_CX" xmi:type="uml:Operation">
+          <ownedParameter direction="in" name="IX_ROOT" xmi:id="U.PAR.ZIF_EWM_MASTER_VIEW_CX_LOG.LOG_CX.IX_ROOT" xmi:type="uml:Parameter">
+            <lowerValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MASTER_VIEW_CX_LOG.LOG_CX.IX_ROOT.L" value="1"/>
+            <upperValue xmi:type="uml:LiteralString" xmi:id="U.PAR.ZIF_EWM_MASTER_VIEW_CX_LOG.LOG_CX.IX_ROOT.H" value="1"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement name="ZCL_EWM_BASE_DIALOG_IC" visibility="public" xmi:id="U.O.ZCL_EWM_BASE_DIALOG_IC" xmi:isAbstract="true" xmi:type="uml:Class">
+        <ownedAttribute isStatic="true" name="MO_VIEW" type="U.O./AUK/CL_VIEW_MAINDYNPRO" visibility="protected" xmi:id="U.O.ZCL_EWM_BASE_DIALOG_IC.MO_VIEW" xmi:type="uml:Property"/>
+        <ownedOperation isAbstract="true" name="CREATE_VIEWS" visibility="protected" xmi:id="U.O.ZCL_EWM_BASE_DIALOG_IC.CREATE_VIEWS" xmi:type="uml:Operation"/>
+        <ownedOperation name="START" visibility="public" xmi:id="U.O.ZCL_EWM_BASE_DIALOG_IC.START" xmi:type="uml:Operation"/>
+      </packagedElement>
+      <packagedElement name="ZIF_EWM_MASTER_CX_LOG_SETTER" visibility="public" xmi:id="U.O.ZIF_EWM_MASTER_CX_LOG_SETTER" xmi:isAbstract="false" xmi:type="uml:Interface"/>
+    </packagedElement>
+    <packagedElement name="/SALT/EWM" visibility="public" xmi:id="U./SALT/EWM" xmi:type="uml:Package">
+      <packagedElement name="/SALT/CL_EWM_LOG_BAL" visibility="public" xmi:id="U.O./SALT/CL_EWM_LOG_BAL" xmi:isAbstract="false" xmi:type="uml:Class"/>
+    </packagedElement>
+    <packagedElement name="/AUK/VC_DYNPRO" visibility="public" xmi:id="U./AUK/VC_DYNPRO" xmi:type="uml:Package">
+      <packagedElement name="/AUK/CL_VIEW_MAINDYNPRO" visibility="public" xmi:id="U.O./AUK/CL_VIEW_MAINDYNPRO" xmi:isAbstract="true" xmi:type="uml:Class"/>
+    </packagedElement>
+  </uml:Package>
+</xmi:XMI>
